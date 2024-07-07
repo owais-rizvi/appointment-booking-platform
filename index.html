@@ -1,164 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
 </head>
+
 <body>
-    <nav>
-        <div class="logo">
-            <i class="fa-solid fa-wave-square"></i>
-        </div>
-        <div class="nav-options">
-            <a class="active" href="#">Home</a>
-            <a href="#doctor-section">Doctor</a>
-            <a href="#services-section">Services</a>
-            <a href="#appointment">Appointment</a>
-        </div>
-        <div class="nav-contact">
-            <a href="#footer"><button id="contact-btn" >Contact Us</button></a>
-        </div>
-    </nav>
-    <div class="hero">
-        <div class="hero-text">
-            <p class="appointment">Appointment</p>
-            <p class="booking">Booking</p>
-            <p class="platform">Platform</p>
-        </div>
-        <div class="hero-img">
-            <img src="1.png" alt="hero image">
-        </div>
-        <div class="icon-box">
-            <i class="fa-solid fa-house-medical-flag"></i>
-            <p>Make <br> appointments at <br> your ease.</p>
-        </div>
-        <div class="gradient-box"></div>
-        <div class="green-circle"></div>
-        <div class="arrow-circle"><p>&#8599</p></div>
-    </div>
-    <div class="doctor-section" id="doctor-section">
-        <br><br>
-        <center>
-            <h1>DOCTOR SECTION</h1> 
-        </center>
-        <br><br><br>
-        <div class="doctor-cards">
-            <div class="card hidden">
-                <div class="card-heading"><h2>Trained Specialists</h2></div>
-                <div class="card-desc">
-                    Our team consists of highly experienced specialists who are experts in their respective fields. Each doctor brings years of knowledge and practice to provide you with the best possible care. <br> Our dedicated professionals are here to help you with compassion and expertise.
-                </div>
-            </div>
-            <div class="card hidden">
-                <div class="card-heading"><h2>Personalised Care</h2></div>
-                <div class="card-desc">
-                    We believe in treating every patient as an individual. Our doctors take the time to understand your unique health needs and develop personalized treatment plans tailored specifically for you. With a focus on comprehensive care, we ensure that you receive the attention and support you deserve throughout your healthcare journey.
-                </div>
-            </div>
-            <div class="card hidden">
-                <div class="card-heading"><h2>Best Facilities</h2></div>
-                <div class="card-desc">
-                    Our clinic is equipped with the latest medical technology and state-of-the-art facilities to provide you with the highest standard of care. <br> Our doctors use advanced diagnostic tools and modern treatment methods to ensure accurate diagnoses and effective treatments.
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="services-section" id="services-section">
-        <br><br>
-        <center>
-            <h1>SERVICES SECTION</h1>
-        </center>
-        <br><br>
-        <div class="service-cards">
-            <div class="s-card hidden">
-                <div class="service-icon">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <div class="service-text"><p>Secure Login and Registration</p></div>
-            </div>
-            <div class="s-card hidden">
-                <div class="service-icon">
-                    <i class="fa-regular fa-calendar-check"></i>
-                </div>
-                <div class="service-text"><p>Booking of your choice</p></div>
-            </div>
-            <div class="s-card hidden">
-                <div class="service-icon">
-                    <i class="fa-regular fa-envelope"></i>
-                </div>
-                <div class="service-text"><p>Notification on booking</p></div>
-            </div>
-        </div>
-        <br><br><br>
-        <center id="appointment">
-            <form action="">
-                <center>
-                    <h2>Make an Appointment</h2><br>
-                    <label for="">Name</label><br>
-                    <input type="text" placeholder="Enter name"><br><br>
-                    <label for="">Email</label><br>
-                    <input type="email" placeholder="Enter email"><br><br>
-                    <label for="">Phone number</label><br>
-                    <input type="number" placeholder="Enter phone number"><br><br>
-                    <label for="">Age</label><br>
-                    <input type="number" placeholder="Enter age"><br><br>
-                    <label for="">Condition</label><br>
-                    <input type="text"><br><br>
-                    <label for="">Schedule a date</label><br>
-                    <input type="date"><br><br>
-                    <label for="">Select your doctor</label><br>
-                    <select name="" id="">
-                        <option value="">Dr. A</option>
-                        <option value="">Dr. B</option>
-                        <option value="">Dr. C</option>
-                    </select>
-                    <br><br>
-                    <button>Confirm</button>
-                </center>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+            
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button>Sign Up</button>
             </form>
-        </center>
-    </div>
-    <br><br><br>
-    <footer id="footer" >
-        <div class="footer-container">
-            <div class="footer-section about">
-                <h2>About Us</h2>
-                <p>We are a team providing the best healthcare services.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+               
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
                 </div>
             </div>
-            <div class="footer-section links">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#doctor-section">Doctor</a></li>
-                    <li><a href="#services-section">Services</a></li>
-                    <li><a href="#appointment">Appointment</a></li>
-                </ul>
-            </div>
-            <div class="footer-section contact">
-                <h2>Contact Us</h2>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
-                    <li><i class="fas fa-phone-alt"></i> +123 456 7890</li>
-                    <li><i class="fas fa-envelope"></i> xyz@example.com</li>
-                </ul>
-            </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
-        </div>
-    </footer>    
-    <script src="script.js" ></script>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
