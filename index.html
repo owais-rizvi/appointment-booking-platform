@@ -97,29 +97,29 @@
         </div>
         <br><br><br>
         <center id="appointment">
-            <form action="">
+            <form action="appointment.php" method="post">
                 <center>
                     <h2>Make an Appointment</h2><br>
                     <label for="">Name</label><br>
-                    <input type="text" placeholder="Enter name"><br><br>
+                    <input type="text" id="name" name="name" required placeholder="Enter name"><br><br>
                     <label for="">Email</label><br>
-                    <input type="email" placeholder="Enter email"><br><br>
+                    <input type="email"id="email" name="email" required placeholder="Enter email"><br><br>
                     <label for="">Phone number</label><br>
-                    <input type="number" placeholder="Enter phone number"><br><br>
+                    <input type="number" id="phone_number" name="phone_number" required placeholder="Enter phone number"><br><br>
                     <label for="">Age</label><br>
-                    <input type="number" placeholder="Enter age"><br><br>
+                    <input type="number" id="age" name="age" required placeholder="Enter age"><br><br>
                     <label for="">Condition</label><br>
-                    <input type="text"><br><br>
+                    <input type="text" id="mycondition" name="mycondition" required ><br><br>
                     <label for="">Schedule a date</label><br>
-                    <input type="date"><br><br>
+                    <input type="date" id="date" name="date" required ><br><br>
                     <label for="">Select your doctor</label><br>
-                    <select name="" id="">
-                        <option value="">Dr. A</option>
-                        <option value="">Dr. B</option>
-                        <option value="">Dr. C</option>
+                    <select name="doctor_choice" id="doctor_choice" required>
+                        <option value="Dr. A">Dr. A</option>
+                        <option value="Dr. B">Dr. B</option>
+                        <option value="Dr. C">Dr. C</option>
                     </select>
                     <br><br>
-                    <button>Confirm</button>
+                    <button type="submit">Confirm</button>
                 </center>
             </form>
         </center>
