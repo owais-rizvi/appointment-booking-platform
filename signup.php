@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
 
     if ($conn->query($sql) === TRUE) {
-        header('Location: welcome.html');
+        header('Location: index.html');
     } else {
         echo "<p class='error'>Error: " . $sql . "<br>" . $conn->error . "</p>";
     }
