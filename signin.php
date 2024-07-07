@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
-            header('Location: index.html');
+            header('Location: welcome.html');
         } else {
             echo "<p class='error'>Invalid password, please try again</p>";
         }
